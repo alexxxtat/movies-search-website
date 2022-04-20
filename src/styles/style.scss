@@ -8,35 +8,31 @@ body {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 ul {
   list-style-type: none;
 }
 
-// .mainArea {
-//   // /* --grayback : rgb(52, 51, 52); */
-//   // --grayback: linear-gradient(
-//   //   to right,
-//   //   #141e30,
-//   //   #243b55
-//   // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-//   // --shadow: -4px -4px 10px rgba(255, 255, 255, 0.158),
-//   //   4px 4px 10px rgba(0, 0, 0, 0.685);
-//   // background: var(--grayback);
-// }
+.mainArea {
+  background-image: linear-gradient(to right, violet, rgb(67, 150, 210));
+}
+.resultText {
+  color: white;
+}
 .moreResults {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   button {
-    padding: 0.25 0.5;
-    font-size: 2rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
     border: none;
-    background-color: #141e30;
+    background-image: linear-gradient(to right, violet, rgb(88, 161, 234));
     color: white;
     cursor: pointer;
+    border-radius: 0.75rem;
   }
 }
 @import "./_nav.scss";
@@ -45,3 +41,4 @@ ul {
 @import "./movie";
 @import "./error";
 @import "./result";
+@import "./about";

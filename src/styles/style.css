@@ -12,11 +12,20 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 ul {
   list-style-type: none;
+}
+
+.mainArea {
+  background-image: -webkit-gradient(linear, left top, right top, from(violet), to(#4396d2));
+  background-image: linear-gradient(to right, violet, #4396d2);
+}
+
+.resultText {
+  color: white;
 }
 
 .moreResults {
@@ -33,16 +42,19 @@ ul {
 }
 
 .moreResults button {
-  padding: 0.25 0.5;
-  font-size: 2rem;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.5rem;
   border: none;
-  background-color: #141e30;
+  background-image: -webkit-gradient(linear, left top, right top, from(violet), to(#58a1ea));
+  background-image: linear-gradient(to right, violet, #58a1ea);
   color: white;
   cursor: pointer;
+  border-radius: 0.75rem;
 }
 
 nav {
-  background-color: violet;
+  background-image: -webkit-gradient(linear, left top, right top, from(violet), to(#58a1ea));
+  background-image: linear-gradient(to right, violet, #58a1ea);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,6 +65,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 nav .left-links {
@@ -65,10 +79,9 @@ nav .tag {
   display: inline-block;
   text-align: center;
   padding: 0.75rem;
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bolder;
-  color: white;
 }
 
 nav .tag:hover {
@@ -117,8 +130,14 @@ nav .tag:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5rem;
-  background-color: violet;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(violet), to(#58a1ea));
+  background-image: linear-gradient(to right, violet, #58a1ea);
   padding: 0.5rem;
 }
 
@@ -158,12 +177,24 @@ nav .tag:hover {
 }
 
 .Movies .Movie:hover {
-  background-color: violet;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4b90ab), to(#e99ec8));
+  background-image: linear-gradient(to right, #4b90ab, #e99ec8);
 }
 
 .Movies .Movie p {
   text-align: center;
   font-size: 0.5rem;
+}
+
+.Movies .Movie button {
+  background-color: violet;
+  border-radius: 1rem;
+  font-size: 0.5rem;
+  padding: 0.1rem;
+}
+
+.Movies .Movie button:hover {
+  cursor: pointer;
 }
 
 .Movies .Movie .imageContainer {
@@ -183,13 +214,18 @@ nav .tag:hover {
           transform: scale(1.02);
 }
 
-p {
+p.errorMsg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
 }
 
 .resultText {
@@ -199,5 +235,24 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.about {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about p {
+  text-align: center;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
