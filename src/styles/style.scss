@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+
+// .mainArea {
+//   // /* --grayback : rgb(52, 51, 52); */
+//   // --grayback: linear-gradient(
+//   //   to right,
+//   //   #141e30,
+//   //   #243b55
+//   // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+//   // --shadow: -4px -4px 10px rgba(255, 255, 255, 0.158),
+//   //   4px 4px 10px rgba(0, 0, 0, 0.685);
+//   // background: var(--grayback);
+// }
+.moreResults {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  button {
+    padding: 0.25 0.5;
+    font-size: 2rem;
+    border: none;
+    background-color: #141e30;
+    color: white;
+    cursor: pointer;
+  }
+}
+@import "./_nav.scss";
+@import "./search.scss";
+@import "./footer";
+@import "./movie";
+@import "./error";
+@import "./result";

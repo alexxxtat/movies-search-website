@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.moreResults {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.moreResults button {
+  padding: 0.25 0.5;
+  font-size: 2rem;
+  border: none;
+  background-color: #141e30;
+  color: white;
+  cursor: pointer;
+}
+
+nav {
+  background-color: violet;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .left-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+}
+
+nav .tag {
+  display: inline-block;
+  text-align: center;
+  padding: 0.75rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+
+nav .tag:hover {
+  border-bottom: 2px solid #945f94;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0rem;
+}
+
+.search input,
+.search button {
+  border: 3px solid violet;
+  outline: none;
+}
+
+.search input {
+  width: 50%;
+}
+
+.search button {
+  background-color: violet;
+  color: white;
+}
+
+.search button:hover {
+  cursor: pointer;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  background-color: violet;
+  padding: 0.5rem;
+}
+
+.Movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Movies .Movie {
+  padding: 1rem;
+  margin: 0rem;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Movies .Movie:hover {
+  background-color: violet;
+}
+
+.Movies .Movie p {
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+.Movies .Movie .imageContainer {
+  overflow: hidden;
+  height: 40vh;
+}
+
+.Movies .Movie .imageContainer img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+
+.Movies .Movie .imageContainer img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resultText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

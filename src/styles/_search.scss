@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0rem;
+  input,
+  button {
+    // font-size: 1.5rem;
+    // padding: 0.1rem;
+    border: 3px solid violet;
+    outline: none;
+  }
+  input {
+    width: 50%;
+  }
+  button {
+    background-color: violet;
+    color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
