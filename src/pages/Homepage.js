@@ -18,6 +18,7 @@ const Homepage = () => {
 
   const search = async () => {
     setPage(1);
+    setData(null);
     setCurrentSearch(searchText);
     const dataFetch = await fetch(searchURL);
     let parsedData = await dataFetch.json();
@@ -50,7 +51,8 @@ const Homepage = () => {
         <div>
           {data && <Result searchText={currentSearch} />}
           <div className="Movies">
-            {data &&
+            {data !== undefined &&
+              data &&
               data.map((d, i, arr) => {
                 if (arr.length - 1 === i && arr.length % 10 === 0) {
                   //console.log(arr.length, i);

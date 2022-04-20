@@ -12,7 +12,7 @@ const Movie = ({ data }) => {
       </div>
       <p>MovieTitle: {data.Title}</p>
       <p>Year of Release: {data.Year}</p>
-      <button>Details</button>
+      <button title="click for movie details">Details</button>
     </div>
   );
 };
